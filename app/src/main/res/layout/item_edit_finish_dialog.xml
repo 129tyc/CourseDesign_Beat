@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="250dp"
+              android:layout_height="match_parent"
+              tools:context=".ItemEdit_Finish">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/itemFinishToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_keepType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/itemEdit_OK"
+            android:text="完成"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            />
+</LinearLayout>

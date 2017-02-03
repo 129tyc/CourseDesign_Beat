@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:baselineAligned="false"
+             android:paddingLeft="@dimen/mainitem_paddingall"
+             android:paddingRight="@dimen/mainitem_paddingall"
+             android:paddingTop="@dimen/mainitem_paddingall">
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/mainitem_paddingall"
+            android:background="@drawable/item_background_selector">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newitem_item_BeatName"
+                style="@android:style/TextAppearance.Large.Inverse"
+                android:gravity="center_vertical"/>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/mainitem_view_margin"
+                android:layout_marginTop="@dimen/mainitem_view_margin"
+                android:background="@color/DimGray"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false"
+                >
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1.5"
+                    android:id="@+id/newitem_item_BeatSecondsLine"
+                    android:gravity="center_horizontal"
+                    >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="持续时长"
+                        style="@android:style/TextAppearance.Medium.Inverse"
+                        android:gravity="center_vertical"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/newitem_item_BeatSeconds"
+                        style="@android:style/TextAppearance.Medium.Inverse"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/maintiem_marginleft"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="秒"
+                        style="@android:style/TextAppearance.Medium.Inverse"
+                        android:gravity="center_vertical"
+                        />
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:id="@+id/newitem_item_BeatNumbersLine"
+                    >
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@android:style/TextAppearance.Medium.Inverse"
+                            android:text="鼓点次数"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/newitem_item_BeatNumbers"
+                            style="@android:style/TextAppearance.Medium.Inverse"
+                            android:layout_marginLeft="@dimen/maintiem_marginleft"
+                            android:textStyle="bold"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@android:style/TextAppearance.Medium.Inverse"
+                            android:text="次"/>
+                </LinearLayout>
+
+                <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/mainitem_view_margin"
+                        android:layout_marginRight="@dimen/mainitem_view_margin"
+                        android:background="@color/DimGray"/>
+
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@android:style/TextAppearance.Medium.Inverse"
+                            android:text="鼓点间隔"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/newitem_item_BeatTime"
+                            style="@android:style/TextAppearance.Medium.Inverse"
+                            android:layout_marginLeft="@dimen/maintiem_marginleft"
+                            android:textStyle="bold"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@android:style/TextAppearance.Medium.Inverse"
+                            android:text="秒"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:id="@+id/newitemListView_indicater"-->
+                <!--android:layout_marginBottom="@dimen/mainitem_view_margin"-->
+                <!--android:layout_marginTop="@dimen/mainitem_view_margin"-->
+                <!--android:background="@color/DimGray"/>-->
+
+        <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/newitemListView_delete"-->
+                <!--android:background="@android:color/holo_red_light"-->
+                <!--android:text="@string/myactivity_main_menu_delete"-->
+                <!--android:layout_gravity="center_vertical|right"-->
+                <!--/>-->
+    </LinearLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:id="@+id/deleteButton"
+            android:background="@android:color/holo_red_light"
+            android:textSize="20sp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="20dp"
+            android:alpha="0.8"
+            android:visibility="gone"/>
+
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sortButton"
+            android:src="@drawable/abc_ic_menu_overflow_material"
+            android:layout_gravity="center_vertical|end"
+            android:alpha="0.8"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="长按拖动"
+            android:visibility="gone"/>
+
+
+</FrameLayout>

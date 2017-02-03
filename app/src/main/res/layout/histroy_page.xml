@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+            layout="@layout/toolbar_include"
+            android:id="@+id/history_page_Toolbar"/>
+
+    <ListView
+            android:id="@+id/history_page_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/history_page_Toolbar"
+            android:dividerHeight="@dimen/abc_seekbar_track_background_height_material"
+            android:divider="@null"/>
+
+</RelativeLayout>

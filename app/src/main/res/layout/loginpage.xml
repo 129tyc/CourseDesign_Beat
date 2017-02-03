@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+            layout="@layout/toolbar_include"
+            android:id="@+id/loginpage_toolbar"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginpage_LoginName_TextInput"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerInParent="true"
+            >
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginpage_LoginPass_TextInput"
+            android:layout_below="@+id/loginpage_LoginName_TextInput"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:imeOptions="actionSend"
+                android:singleLine="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginpage_checkbox"
+            android:layout_below="@+id/loginpage_LoginPass_TextInput"
+            android:text="保持登录状态"
+            android:layout_marginStart="10dp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginpage_LoginButton"
+            android:text="登陆"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_below="@+id/loginpage_checkbox"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginpage_RegisterButton"
+            android:text="立即注册"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_below="@+id/loginpage_checkbox"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginStart="10dp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginpage_ForgetButton"
+            android:text="忘记密码"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_below="@+id/loginpage_checkbox"
+            android:layout_toEndOf="@+id/loginpage_RegisterButton"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+            layout="@layout/toolbar_include"
+            android:id="@+id/registerpage_toolbar"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerpage_RegisterName_TextInput"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            >
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerpage_RegisterName"
+                android:singleLine="true"
+                android:inputType="text"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerpage_RegisterPass_TextInput"
+            android:layout_below="@+id/registerpage_RegisterName_TextInput"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            >
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerpage_RegisterPass"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerpage_RegisterPassTwice_TextInput"
+            android:layout_below="@+id/registerpage_RegisterPass_TextInput"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/registerpage_RegisterPassTwice"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerpage_RegisterButton"
+            android:text="立即注册"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_below="@+id/registerpage_RegisterPassTwice_TextInput"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"/>
+</RelativeLayout>

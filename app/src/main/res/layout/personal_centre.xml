@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+            layout="@layout/toolbar_include"
+            android:id="@+id/personal_centre_toolbar"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_page_item"
+            android:padding="10dp"
+            >
+
+        <com.example.testapp2.app.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/avatar"
+                android:layout_alignParentStart="true"
+                android:id="@+id/personal_centre_avatar"
+                />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personal_centre_setImageButton"
+                android:text="修改头像"
+                android:layout_alignParentEnd="true"
+
+                style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_page_item"
+            android:padding="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="用户ID"
+                style="@style/TextAppearance.AppCompat.Display1"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/personal_centre_userId"
+                style="@style/TextAppearance.AppCompat.Display1"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_page_item"
+            android:padding="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="用户名"
+                style="@style/TextAppearance.AppCompat.Display1"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/personal_centre_userName"
+                style="@style/TextAppearance.AppCompat.Display1"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_page_item"
+            android:padding="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="用户昵称"
+                style="@style/TextAppearance.AppCompat.Display1"
+                />
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/personal_centre_userNickName"
+                android:text="无昵称"
+                style="@style/Widget.AppCompat.EditText"
+                android:singleLine="true"
+                android:selectAllOnFocus="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_page_item"
+            android:padding="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="性别"
+                style="@style/TextAppearance.AppCompat.Display1"
+                />
+
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/personal_centre_sexGroup">
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:id="@+id/personal_centre_sexMan"/>
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:id="@+id/personal_centre_sexWoman"/>
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_page_item"
+            android:padding="10dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="生日"
+                style="@style/TextAppearance.AppCompat.Display1"
+                />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/personal_centre_birthdayButton"
+                android:layout_alignParentEnd="true"
+                android:text="选择日期"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+    </RelativeLayout>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存并上传"
+            android:id="@+id/personal_centre_save"
+            android:textColor="@android:color/holo_green_light"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注销账户"
+            android:layout_gravity="right"
+            android:id="@+id/personal_centre_logOut"
+            android:textColor="@android:color/holo_red_light"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+</LinearLayout>

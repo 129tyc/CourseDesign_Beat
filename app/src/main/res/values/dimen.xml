@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="newitembuttonpadding">30dp</dimen>
+    <dimen name="keepbeatdisplaytextsize">160sp</dimen>
+    <dimen name="keepbeatpartnametextsize">30sp</dimen>
+    <dimen name="keepbeatkeepitemnametextsize">60sp</dimen>
+    <dimen name="newitemdialogmianPadding">15dp</dimen>
+    <dimen name="simpleadapter_dividerheight">5dp</dimen>
+    <dimen name="keepbeat_beatdiaplay_beatnametextsize">100sp</dimen>
+    <dimen name="mainitem_paddingbottem">0dp</dimen>
+    <dimen name="mainitem_paddingall">10dp</dimen>
+    <dimen name="maintiem_marginleft">10dp</dimen>
+    <dimen name="mainitem_view_margin">5dp</dimen>
+    <dimen name="loginpage_avatarheight">40dp</dimen>
+</resources>

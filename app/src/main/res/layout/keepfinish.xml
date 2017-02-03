@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Material.Display3"
+            android:text="锻炼完成!"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:gravity="center"/>
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="再来一次"
+            android:id="@+id/keepfinishagain"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+            android:textSize="@dimen/keepbeatpartnametextsize"
+            android:textStyle="bold"/>
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="结束锻炼"
+            android:id="@+id/keepfinishdone"
+            android:layout_weight="1"
+            style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+            android:textSize="@dimen/keepbeatpartnametextsize"
+            android:textStyle="bold"/>
+</LinearLayout>

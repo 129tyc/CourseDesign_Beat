@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.testapp2.app.DragListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/item_listView"
+        android:background="@color/material_grey_800"
+        android:divider="@null"
+        android:dividerHeight="@dimen/abc_seekbar_track_background_height_material">
+</com.example.testapp2.app.DragListView>
